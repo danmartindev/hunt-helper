@@ -1,10 +1,22 @@
+<button (click)="createEle()">Add</button>
+
 <div class="example-box" cdkDrag>nasdkjfhalskjdfhlkasfdhlk</div>
 
-<div class="example-box" cdkDrag>
+<div class="example-box" cdkDrag (click)="getLoc($event)">
     Drag me around
 </div>
 
-<mat-sidenav-container class="example-container">
+<div *ngFor="let e of elements" class="example-box" cdkDrag (click)="getLoc($event)">
+    {{e.name}}
+</div>
+
+<div class="snapper" id="lock" #myLock>
+    I am lock
+</div>
+
+<button (click)="shift()">shift</button>
+
+<!-- <mat-sidenav-container class="example-container">
     <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')"
                     (closed)="events.push('close!')">
         Sidenav content
@@ -14,5 +26,5 @@
         <p><mat-checkbox [(ngModel)]="opened">sidenav.opened</mat-checkbox></p>
         <p><button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button></p>
     </mat-sidenav-content>
-</mat-sidenav-container>
+</mat-sidenav-container> -->
     
