@@ -4,7 +4,11 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSortModule } from '@angular/material/sort';
+import { MatTableModule } from '@angular/material/table';
 
 
 @NgModule({
@@ -13,7 +17,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     DragDropModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatSidenavModule
+    MatFormFieldModule,
+    MatInputModule,
+    MatSidenavModule,
+    MatSortModule,
+    MatTableModule
   ]
 })
 export class MaterialsModule { }
