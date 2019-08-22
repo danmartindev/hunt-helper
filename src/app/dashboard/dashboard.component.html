@@ -1,4 +1,4 @@
-<div cdkDropListGroup id="list-wrap">
+<!-- <div cdkDropListGroup id="list-wrap">
   <div class="list-container">
     <h2>To do</h2>
 
@@ -16,10 +16,23 @@
 
     <div
       cdkDropList
-      [cdkDropListData]="done"
+      [(cdkDropListData)]="done"
       class="hh-list"
-      (cdkDropListDropped)="drop($event)">
-      <div class="hh-comp" *ngFor="let item of done" cdkDrag>{{item}}</div>
+      (cdkDropListDropped)="drop($event)"
+    >
+      <div class="hh-comp" *ngFor="let item of done" cdkDrag>{{item}}<app-list></app-list></div>
+      
     </div>
   </div>
+</div> -->
+
+<div id="div-wrap" cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+  <div class="example-box" cdkDrag *ngFor="let el of elements" [innerHtml]="el | keepHtml">
+  </div>
 </div>
+
+<!-- <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+  <div class="example-box" *ngFor="let movie of movies" cdkDrag>{{movie}}</div>
+</div> -->
+
+<app-todo></app-todo>
