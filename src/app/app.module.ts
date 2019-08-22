@@ -8,13 +8,19 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsModule } from '@angular/forms';
 import { AppListComponent } from './app-list/app-list.component';
+import { TodoComponent } from './todo/todo.component';
+
+
+import { KeepHtmlPipe } from './keep-html.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    AppListComponent
+    AppListComponent,
+    TodoComponent,
+    KeepHtmlPipe
   ],
   imports: [
     BrowserModule,
