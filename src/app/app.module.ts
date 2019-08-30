@@ -11,8 +11,6 @@ import { AppListComponent } from './app-list/app-list.component';
 import { TodoComponent } from './todo/todo.component';
 
 
-import { KeepHtmlPipe } from './keep-html.pipe';
-
 
 @NgModule({
   declarations: [
@@ -20,7 +18,6 @@ import { KeepHtmlPipe } from './keep-html.pipe';
     DashboardComponent,
     AppListComponent,
     TodoComponent,
-    KeepHtmlPipe
   ],
   imports: [
     BrowserModule,
@@ -29,6 +26,8 @@ import { KeepHtmlPipe } from './keep-html.pipe';
     MaterialsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [TodoComponent],
+  entryComponents: [TodoComponent]
 })
 export class AppModule { }
