@@ -27,12 +27,17 @@
 </div> -->
 
 <div id="div-wrap" cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
-  <div class="example-box" cdkDrag *ngFor="let el of elements" [innerHtml]="el | keepHtml">
-  </div>
+  <!-- <div class="example-box" cdkDrag *ngFor="let el of elements" [innerHtml]="el">
+  </div> -->
+  <!-- <div [ngSwitch]="el" cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+    <app-list class="example-box" cdkDrag *ngSwitchCase="list"></app-list>
+    <app-todo class="example-box" cdkDrag *ngSwitchCase="todo"></app-todo>
+  </div> -->
+  <ng-container *ngComponentOutlet="myEl"></ng-container>
 </div>
 
-<!-- <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
-  <div class="example-box" *ngFor="let movie of movies" cdkDrag>{{movie}}</div>
-</div> -->
 
-<app-todo></app-todo>
+ <!-- <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+  <div class="example-box" *ngFor="let movie of movies" cdkDrag>{{movie}}</div>
+</div>  -->
+
