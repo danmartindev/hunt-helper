@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
+import { TodoComponent } from '../todo/todo.component';
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
+
 export class DashboardComponent implements OnInit {
 
   movies = [
@@ -20,12 +23,22 @@ export class DashboardComponent implements OnInit {
   ];
 
   elements = [
-    '<div>glabb</div>',
-    '<app-todo></app-todo>'
+    'list',
+    'todo'
   ];
+
+  myEl = TodoComponent;
+
+  // indexes = [
+  //   {index: 1, component: },
+  //   {}
+  // ];
 
   drop(event: CdkDragDrop<string[]>) {
     moveItemInArray(this.movies, event.previousIndex, event.currentIndex);
+    moveItemInArray(this.elements, event.previousIndex, event.currentIndex);
+
+    console.log(this.elements);
   }
 
   ngOnInit() {
