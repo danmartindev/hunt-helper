@@ -1,4 +1,4 @@
-<table mat-table [dataSource]="appDataSource" matSort class="mat-elevation-z8">
+<table mat-table [dataSource]="appDataSource" matSort>
   <ng-container matColumnDef="dateOfApp">
     <th mat-header-cell *matHeaderCellDef mat-sort-header> Date Applied </th>
     <td mat-cell *matCellDef="let app"> {{app.dateOfApp | date : "MM/dd/y"}} </td>
