@@ -27,7 +27,7 @@ import { TodoComponent } from './todo/todo.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [TodoComponent],
-  entryComponents: [TodoComponent]
+  exports: [TodoComponent, AppListComponent],
+  entryComponents: [TodoComponent, AppListComponent]
 })
 export class AppModule { }
