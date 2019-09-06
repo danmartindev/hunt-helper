@@ -1,3 +1,13 @@
+<div id="dash-wrap">
+
+    <div id="div-wrap" cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+      <div *ngFor = "let e of elTest" cdkDrag class="hh-comp-div">
+        <ng-container *ngComponentOutlet="e"></ng-container>
+      </div>
+    </div>
+    
+</div>
+
 <!-- <div cdkDropListGroup id="list-wrap">
   <div class="list-container">
     <h2>To do</h2>
@@ -26,18 +36,18 @@
   </div>
 </div> -->
 
-<div id="div-wrap" cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
-  <!-- <div class="example-box" cdkDrag *ngFor="let el of elements" [innerHtml]="el">
-  </div> -->
-  <!-- <div [ngSwitch]="el" cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
-    <app-list class="example-box" cdkDrag *ngSwitchCase="list"></app-list>
-    <app-todo class="example-box" cdkDrag *ngSwitchCase="todo"></app-todo>
-  </div> -->
-  <ng-container *ngComponentOutlet="myEl"></ng-container>
+<!-- <div id="div-wrap" cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+
+  <div *ngFor = "let e of elTest" cdkDrag>
+    <ng-container *ngComponentOutlet="e" ></ng-container>
+  </div>
 </div>
 
 
- <!-- <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+ <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
   <div class="example-box" *ngFor="let movie of movies" cdkDrag>{{movie}}</div>
-</div>  -->
+</div> 
+ -->
 
+
+  
