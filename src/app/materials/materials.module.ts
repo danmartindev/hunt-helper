@@ -4,11 +4,14 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
 
 
 @NgModule({
@@ -17,11 +20,13 @@ import { MatTableModule } from '@angular/material/table';
     DragDropModule,
     MatButtonModule,
     MatCheckboxModule,
+    MatDividerModule,
     MatFormFieldModule,
     MatInputModule,
     MatSidenavModule,
     MatSortModule,
-    MatTableModule
+    MatTableModule,
+    MatToolbarModule
   ]
 })
 export class MaterialsModule { }
