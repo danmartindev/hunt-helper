@@ -1,0 +1,32 @@
+@import '../../colors.scss';
+
+#home-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.home-half {
+    width: 99%;
+    // display: flex;
+    // flex-wrap: wrap;
+    padding: 20px;
+}
+
+#left-half {
+    // justify-content: flex-end;
+}
+
+.line {
+    background-color: $primary;
+    width: 3px;
+}
+
+.info-div{
+    border: 2px solid $primary;
+    width: 400px;
+    height: 250px;
+    border-radius: 30px;
+    padding: 15px;
+}
