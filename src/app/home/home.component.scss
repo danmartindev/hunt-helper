@@ -10,6 +10,7 @@
     margin: auto;
     width: 500px;
     padding: 20px;
+    text-align: center;
     border-bottom: 1px solid $primary;
 }
 
@@ -18,6 +19,7 @@
     // display: flex;
     // flex-wrap: wrap;
     padding: 20px;
+    position: relative;
 }
 
 #left-half {
@@ -32,10 +34,22 @@
     right: 50%;
 }
 
+.half-line {
+    height: 1px;
+    background-color: $primary;
+    width: 100%;
+    position: absolute;
+    bottom: 50%;
+    z-index: 0;
+}
+
 .info-div{
     border: 1px solid $primary;
+    position: relative;
     width: 400px;
     height: 250px;
     border-radius: 30px;
     padding: 15px;
+    background-color: white;
+    z-index: 20;
 }
