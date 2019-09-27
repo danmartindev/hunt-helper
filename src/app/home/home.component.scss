@@ -1,9 +1,6 @@
 @import '../../colors.scss';
 
 #home-wrap{
-    // display: flex;
-    // justify-content: space-evenly;
-    height: 100%;
 }
 
 #intro {
@@ -14,42 +11,87 @@
     border-bottom: 1px solid $primary;
 }
 
-.home-half {
-    //width: 99%;
-    // display: flex;
-    // flex-wrap: wrap;
-    padding: 20px;
-    position: relative;
-}
-
-#left-half {
-    // justify-content: flex-end;
-}
-
 .line {
     background-color: $primary;
     width: 1px;
     height: 100%;
     position: absolute;
     right: 50%;
-}
-
-.half-line {
-    height: 1px;
-    background-color: $primary;
-    width: 100%;
-    position: absolute;
-    bottom: 50%;
     z-index: 0;
 }
 
-.info-div{
-    border: 1px solid $primary;
+#info-wrap{
+    width: 60%;
+    margin: auto;
     position: relative;
-    width: 400px;
-    height: 250px;
-    border-radius: 30px;
-    padding: 15px;
-    background-color: white;
-    z-index: 20;
+
+    
+    .right{
+        .info-div {
+            margin-left: auto;
+        }
+        
+        .half-line {
+            left: 50%;
+        }
+    }
+
+    .entry-wrap {
+        position: relative;
+        padding: 20px 0px;
+    
+        .info-div{
+            border: 1px solid $primary;
+            position: relative;
+            width: 400px;
+            height: 250px;
+            border-radius: 30px;
+            padding: 15px;
+            background-color: white;
+            z-index: 20;
+        }
+    
+        .half-line {
+            height: 1px;
+            background-color: $primary;
+            width: 50%;
+            position: absolute;
+            bottom: 50%;
+            z-index: 0;
+        }
+    }
 }
+
+#home-start {
+    width: 100%;
+    background-color: $primary;
+    position: relative;
+    height: 300px;
+
+    .line2 {
+        background-color: white;
+        width: 1px;
+        height: 50%;
+        top: 0px;
+        position: absolute;
+        right: 50%;
+        z-index: 0;
+    }
+
+    div {
+        position: relative;
+        top: 50%;
+        text-align: center;
+        z-index: 10;
+        span {
+            background-color: $primary;
+
+            font-size: 20pt;
+            padding: 15px;
+            border: 1px solid white;
+        }
+    }
+    
+}
+
+
