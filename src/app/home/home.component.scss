@@ -1,6 +1,7 @@
 @import '../../colors.scss';
 
-#home-wrap{
+#home-wrap {
+
 }
 
 #intro {
@@ -20,11 +21,25 @@
     z-index: 0;
 }
 
+.hero{
+    img{
+        display: block;
+        margin:auto;
+    }
+    height: 100vh;
+    background-color: $primary;
+}
+
+img{ 
+    margin: auto;
+}
+
 #info-wrap{
     width: 60%;
     margin: auto;
     position: relative;
 
+    
     
     .right{
         .info-div {
@@ -78,17 +93,18 @@
         z-index: 0;
     }
 
-    div {
+    #btn-wrap {
         position: relative;
         top: 50%;
         text-align: center;
         z-index: 10;
+
         span {
             background-color: $primary;
-
             font-size: 20pt;
             padding: 15px;
             border: 1px solid white;
+            border-radius: 50px;
         }
     }
     
