@@ -2,9 +2,10 @@ import { trigger, state, transition, style, animate, query, stagger, animateChil
 
 
 export const navAnim =
-    state('hidden', style({ height: '10px'}))
     trigger('navAnim', [
+        state('hidden', style({ transform: 'translateY(-90%)'})),
+
         transition('* <=> hidden', [
-            animate('0.3s .05s ease-in-out')
+            animate('0.2s ease-in-out')
         ])
     ])
