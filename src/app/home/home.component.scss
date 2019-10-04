@@ -65,6 +65,17 @@ img{
             padding: 15px;
             background-color: white;
             z-index: 20;
+
+            h1 {
+                text-align: center;
+                margin: 0px 0px 10px 0px;
+            }
+            .pIMG {
+                height: 200px;
+                width: 200px;
+                margin: auto;
+                background-color: red;
+            }
         }
     
         .half-line {
